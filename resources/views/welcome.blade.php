@@ -14,46 +14,118 @@
 </head>
 <body class="font-sans bg-gradient-to-br from-[#f4f9ff] via-[#f7f7f7] to-[#fdf6f0]">
 
+    
+
     <!-- Navbar -->
-    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-        <div class="max-w-7xl mx-auto px-12 py-4 flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-                <img src="images/logo.png" alt="IDNlogo" class="h-[72px]">
+<header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+            <img src="{{ asset('images/logo.png') }}" alt="IDNlogo" class="h-[56px] md:h-[72px]">
+        </div>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex items-center gap-8 text-gray-800 font-medium">
+            <a href="{{ url('/#beranda') }}" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">Beranda</a>
+            <a href="{{ url('/#harga') }}" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">Harga/Paket</a>
+
+            <!-- Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 py-2 px-3 hover:text-orange-500 transition duration-200">
+                    Layanan
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180 duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 transform scale-95 group-hover:scale-100">
+                    <a href="#company-profile" class="block px-4 py-2 hover:bg-orange-50 hover:text-orange-500 transition">Website Company Profile</a>
+                    <a href="#ecommerce" class="block px-4 py-2 hover:bg-orange-50 hover:text-orange-500 transition">Website E-Commerce</a>
+                    <a href="#landing-page" class="block px-4 py-2 hover:bg-orange-50 hover:text-orange-500 transition">Landing Page</a>
+                    <a href="#custom" class="block px-4 py-2 hover:bg-orange-50 hover:text-orange-500 transition">Custom Website</a>
+                </div>
             </div>
 
-            <!-- Menu -->
-            <nav class="hidden md:flex items-center gap-8 text-gray-800 font-medium">
-                <a href="{{ url ('/#beranda') }}" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">Beranda</a>
-                <a href="{{ url ('/#harga') }}" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">Harga/Paket</a>
+            <a href="#" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">Tentang Kami</a>
+            <a href="{{ url('/#faqs') }}" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">FAQs</a>
+            <a href="{{ route ('login') }}" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">Login</a>
+        </nav>
 
-                <!-- Dropdown -->
-                <div class="relative group">
-                    <button class="flex items-center gap-1 py-2 px-3 hover:text-orange-500 transition duration-200">
-                        Layanan
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180 duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 transform scale-95 group-hover:scale-100">
-                        <a href="#company-profile" class="block px-4 py-2 hover:bg-orange-50 hover:text-orange-500 transition">Website Company Profile</a>
-                        <a href="#ecommerce" class="block px-4 py-2 hover:bg-orange-50 hover:text-orange-500 transition">Website E-Commerce</a>
-                        <a href="#landing-page" class="block px-4 py-2 hover:bg-orange-50 hover:text-orange-500 transition">Landing Page</a>
-                        <a href="#custom" class="block px-4 py-2 hover:bg-orange-50 hover:text-orange-500 transition">Custom Website</a>
-                    </div>
-                </div>
+        <!-- Button Desktop -->
+        <a href="https://tawk.to/chat/689f91c018d27d1925752e9a/1j2nl2m3v" target="_blank"
+            class="hidden md:inline-block border border-orange-500 text-orange-500 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 hover:text-white transition duration-300">
+            Konsultasi Gratis
+        </a>
 
-                <a href="#" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">Tentang Kami</a>
-                <a href="{{ url ('/#faqs') }}" class="relative hover:text-orange-500 transition duration-200 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300">FAQs</a>
-            </nav>
+        <!-- Tombol Mobile -->
+        <button id="menu-btn" class="md:hidden text-3xl text-gray-700 focus:outline-none">
+            ☰
+        </button>
+    </div>
+</header>
 
-            <!-- Button -->
-            <a href="https://tawk.to/chat/689f91c018d27d1925752e9a/1j2nl2m3v" target="_blank" class="border border-orange-500 text-orange-500 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 hover:text-white transition duration-300">
+<!-- Sidebar Mobile -->
+<div id="sidebar"
+    class="fixed top-0 left-0 w-64 h-full bg-gray-500 shadow-lg transform -translate-x-full transition-transform duration-300 z-50">
+    <div class="p-4 flex justify-between items-center border-b border-blue-500">
+        <img src="{{ asset('images/logo.png') }}" alt="IDNlogo" class="h-[48px]">
+        <button id="close-btn" class="text-2xl text-white">✕</button>
+    </div>
+    <ul class="p-4 space-y-4 text-white font-medium">
+        <li><a href="{{ url('/#beranda') }}" class="block hover:text-orange-500 transition">Beranda</a></li>
+        <li><a href="{{ url('/#harga') }}" class="block hover:text-orange-500 transition">Harga/Paket</a></li>
+        <li><a href="#company-profile" class="block hover:text-orange-500 transition">Website Company Profile</a></li>
+        <li><a href="#ecommerce" class="block hover:text-orange-500 transition">Website E-Commerce</a></li>
+        <li><a href="#landing-page" class="block hover:text-orange-500 transition">Landing Page</a></li>
+        <li><a href="#custom" class="block hover:text-orange-500 transition">Custom Website</a></li>
+        <li><a href="#" class="block hover:text-orange-500 transition">Tentang Kami</a></li>
+        <li><a href="{{ url('/#faqs') }}" class="block hover:text-orange-500 transition">FAQs</a></li>
+        <li><a href="{{ route ('login') }}" class="block hover:text-orange-500 transition">Login</a></li>
+        <li>
+            <a href="https://tawk.to/chat/689f91c018d27d1925752e9a/1j2nl2m3v" target="_blank"
+                class="block border border-orange-500 text-orange-500 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 hover:text-white transition duration-300">
                 Konsultasi Gratis
             </a>
-        </div>
-    </header>
-    <br>
+        </li>
+    </ul>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    // buka sidebar
+    menuBtn.addEventListener('click', () => {
+        sidebar.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+    });
+
+    // tutup sidebar (pakai tombol X)
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+    });
+
+    // tutup sidebar (klik overlay)
+    overlay.addEventListener('click', () => {
+        sidebar.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+    });
+
+    // tutup sidebar ketika menu diklik
+    document.querySelectorAll('#sidebar a').forEach(link => {
+        link.addEventListener('click', () => {
+            sidebar.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+        });
+    });
+</script>
+
+ <br>
     <br>
     <br>
     <br>
@@ -117,8 +189,7 @@
         <!-- Right Image -->
         <div id="heroImage" class="flex justify-center fade-in-up-delay">
             <div class="overflow-hidden">
-                <img src="images/banner-1.png" alt="banner-1" class="w-3/4 h-auto object-cover mx-auto">
-            </div>
+                <img src="{{ asset('images/banner-1.png') }}" alt="banner-1" class="w-3/4 h-auto object-cover mx-auto">            </div>
         </div>
     </section>
 
@@ -198,7 +269,7 @@
         <div class="mt-10 flex justify-center">
             <div class="relative w-full md:w-[700px] rounded-xl overflow-hidden shadow-lg">
                 <video controls class="w-full h-auto">
-                    <source src="videos/videoIDN.mp4" type="video/mp4">
+                      <source src="{{ asset('videos/videoIDN.mp4') }}" type="video/mp4">
                     Browser kamu tidak mendukung video HTML5.
                 </video>
             </div>
@@ -345,12 +416,11 @@
     </script>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/628978475687" class="fixed bottom-14 right-6 bg-green-500 text-white px-4 py-3 rounded-full flex items-center gap-2 shadow-lg hover:bg-green-600 transition">
+    <a href="https://wa.me/628978475687" class="fixed bottom-8 right-6 bg-green-500 text-white px-4 py-3 rounded-full flex items-center gap-2 shadow-lg hover:bg-green-600 transition">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5" viewBox="0 0 16 16">
             <path d="M13.601 2.326A7.854 7.854 0 0 0 8.043.003C3.639.003 0 3.64 0 8.043c0 1.417.37 2.8 1.07 4.021L0 16l4.06-1.058a7.98 7.98 0 0 0 3.983 1.048h.004c4.403 0 8.042-3.638 8.042-8.042 0-2.148-.84-4.165-2.388-5.622zM8.043 14.5c-1.34 0-2.646-.36-3.78-1.038l-.27-.16-2.408.627.643-2.348-.157-.24A6.479 6.479 0 0 1 1.5 8.043C1.5 4.47 4.47 1.5 8.043 1.5c1.736 0 3.368.676 4.594 1.902a6.449 6.449 0 0 1 1.906 4.594c0 3.573-2.97 6.504-6.5 6.504z" />
             <path d="M11.603 9.384c-.2-.1-1.178-.578-1.36-.643-.182-.066-.314-.1-.445.1-.132.2-.51.643-.625.775-.115.132-.23.148-.43.05-.2-.1-.843-.31-1.604-.99-.593-.528-.993-1.178-1.108-1.378-.115-.2-.012-.308.088-.408.09-.09.2-.23.3-.345.1-.115.132-.2.2-.332.066-.132.033-.25-.017-.35-.05-.1-.445-1.073-.61-1.468-.16-.385-.323-.333-.445-.34-.115-.007-.25-.007-.383-.007s-.35.05-.532.25c-.182.2-.693.678-.693 1.655 0 .977.71 1.92.81 2.052.1.132 1.397 2.133 3.393 2.99.475.205.845.327 1.134.418.477.152.91.13 1.253.08.383-.057 1.178-.48 1.345-.943.166-.463.166-.86.116-.943-.05-.083-.182-.132-.382-.232z" />
         </svg>
-        Chat on WhatsApp
     </a>
 
     <!-- FAQ Section -->
