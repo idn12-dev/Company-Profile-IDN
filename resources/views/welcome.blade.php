@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inovasi Digital Nusantara</title>
+    <title>Trikarya Inovasi Digital</title>
     <!-- Tambahkan Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('images/logo.png') }}">
@@ -21,7 +21,7 @@
     <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center gap-2">
-            <img src="{{ asset('images/logo.png') }}" alt="IDNlogo" class="h-[56px] md:h-[72px]">
+            <img src="{{ asset('images/logo.png') }}" alt="trindigLogo" class="h-[56px] md:h-[72px]">
         </div>
 
         <!-- Menu Desktop -->
@@ -168,113 +168,115 @@
 
     </style>
 
-    <!-- Hero Section -->
-    <section id="beranda" class="max-w-7xl mx-auto px-12 py-8 md:py-10 mt-4 grid md:grid-cols-2 gap-8 items-center">
+   <!-- Hero Section -->
+<section id="beranda" class="max-w-7xl mx-auto px-12 py-8 md:py-10 mt-4 grid md:grid-cols-2 gap-8 items-center">
 
-        <!-- Left Content -->
-        <div id="heroText" class="fade-in-up">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
-                Jasa Pembuatan Website Profesional untuk Bisnis Anda
-            </h1>
-            <p class="text-gray-700 mb-6 leading-relaxed">
-                Kami menyediakan layanan pembuatan website modern, responsif, yang siap membantu bisnis Anda tampil profesional di dunia digital.
-                Dari website perusahaan, toko online, hingga landing page promosi. semua bisa kami buat sesuai kebutuhan Anda.
-            </p>
-            <p class="font-semibold text-gray-800 mb-7">Ingin tahu lebih lanjut?</p>
-            <a href="#kontak" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
-                Pelajari Selengkapnya
-            </a>
-        </div>
+    <!-- Left Content -->
+    <div id="heroText" class="fade-in-up">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+            UjiPro-CBT — Mudahkan Ujian Online Sekolah & Lembaga
+        </h1>
 
-        <!-- Right Image -->
-        <div id="heroImage" class="flex justify-center fade-in-up-delay">
-            <div class="overflow-hidden">
-                <img src="{{ asset('images/banner-1.png') }}" alt="banner-1" class="w-3/4 h-auto object-cover mx-auto">            </div>
-        </div>
-    </section>
-
-    <script>
-        // Contoh: fade-out saat scroll ke bawah
-        window.addEventListener("scroll", function() {
-            let heroText = document.getElementById("heroText");
-            let heroImage = document.getElementById("heroImage");
-
-            if (window.scrollY > 150) {
-                heroText.classList.add("fade-out-down");
-                heroImage.classList.add("fade-out-down");
-            } else {
-                heroText.classList.remove("fade-out-down");
-                heroImage.classList.remove("fade-out-down");
-            }
-        });
-
-    </script>
-
-    {{-- promosi --}}
-    <style>
-        @keyframes slideInRight {
-            0% {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideOutLeft {
-            0% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-
-            100% {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-        }
-
-        .slide-in-right {
-            animation: slideInRight 1s ease-out forwards;
-        }
-
-        .slide-out-left {
-            animation: slideOutLeft 1s ease-in forwards;
-        }
-
-        .hidden-section {
-            opacity: 0;
-        }
-
-    </style>
-
-    <!-- Section Promosi -->
-    <section id="promosi" class="text-center px-6 py-16 max-w-5xl mx-auto hidden-section">
-        <!-- Judul -->
-        <h2 class="text-3xl md:text-4xl font-extrabold text-blue-700 leading-snug">
-            Jasa Pembuatan Website dengan IDN,<br>
-            Solusi Cara Membuat Website Mudah
-        </h2>
-
-        <!-- Deskripsi -->
-        <p class="mt-4 text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Kamu nggak perlu pusing mikirin prosesnya. IDN akan membuat website kamu sesuai dengan kebutuhan untuk menunjang prospek perusahaanmu.
-            Nikmati harga paling murah mulai dari<span class="font-bold text-gray-800"> Rp250.000,-/bulan</span>.<br>
-            GRATIS Domain dan Hosting!
+        <p class="text-gray-700 mb-6 leading-relaxed">
+            <strong>UjiPro-CBT</strong> mempermudah pengelolaan ujian digital dengan tampilan modern, fitur lengkap, dan sistem keamanan terpercaya.
         </p>
 
-        <!-- Gambar -->
-        <div class="mt-10 flex justify-center">
-            <div class="relative w-full md:w-[700px] rounded-xl overflow-hidden shadow-lg">
-                <video controls class="w-full h-auto">
-                      <source src="{{ asset('videos/videoIDN.mp4') }}" type="video/mp4">
-                    Browser kamu tidak mendukung video HTML5.
-                </video>
-            </div>
+        <p class="font-semibold text-gray-800 mb-7">Ingin tahu bagaimana UjiPro-CBT bekerja?</p>
+        <a href="#kontak" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
+            Pelajari Selengkapnya
+        </a>
+    </div>
+
+    <!-- Right Image -->
+    <div id="heroImage" class="flex justify-center fade-in-up-delay">
+        <div class="overflow-hidden">
+            <img src="{{ asset('images/banner-cbt.png') }}" alt="UjiPro-CBT Banner" class="w-3/4 h-auto object-cover mx-auto">
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    // Efek fade-out saat scroll ke bawah
+    window.addEventListener("scroll", function() {
+        let heroText = document.getElementById("heroText");
+        let heroImage = document.getElementById("heroImage");
+
+        if (window.scrollY > 150) {
+            heroText.classList.add("fade-out-down");
+            heroImage.classList.add("fade-out-down");
+        } else {
+            heroText.classList.remove("fade-out-down");
+            heroImage.classList.remove("fade-out-down");
+        }
+    });
+</script>
+
+{{-- promosi --}}
+<style>
+    @keyframes slideInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideOutLeft {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+    }
+
+    .slide-in-right {
+        animation: slideInRight 1s ease-out forwards;
+    }
+
+    .slide-out-left {
+        animation: slideOutLeft 1s ease-in forwards;
+    }
+
+    .hidden-section {
+        opacity: 0;
+    }
+</style>
+
+
+   <!-- Section Promosi -->
+<section id="promosi" class="text-center px-6 py-16 max-w-5xl mx-auto hidden-section">
+    <!-- Judul -->
+   <h2 class="text-3xl md:text-4xl font-extrabold text-blue-700 leading-snug">
+        UjiPro-CBT, Platform Ujian Online Profesional
+    </h2>
+
+
+    <!-- Deskripsi -->
+   <p class="mt-4 text-gray-600 max-w-3xl mx-auto leading-relaxed">
+    Rasakan kemudahan ujian digital bersama <strong>UjiPro-CBT</strong>.  
+        Sistem cepat, hasil otomatis, dan dukungan penuh dari tim profesional.  
+        <br><span class="font-bold text-gray-800">Mulai Rp250.000,-/bulan</span> saja!
+    </p>
+
+
+    <!-- Gambar / Video -->
+    <div class="mt-10 flex justify-center">
+        <div class="relative w-full md:w-[700px] rounded-xl overflow-hidden shadow-lg">
+            <video controls class="w-full h-auto">
+                <source src="{{ asset('videos/ujiProCBT-demo.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
 
     <script>
         // Observer untuk animasi saat scroll
@@ -322,98 +324,80 @@
 
     </style>
 
-    <!-- Section Harga -->
-    <section class="bg-white py-16 px-6 md:px-12 fade-in-up" id="harga">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-12">Paket Harga</h2>
+   <!-- Section Harga -->
+<section class="bg-white py-16 px-6 md:px-12 fade-in-up" id="harga">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-12">Paket Layanan UjiPro-CBT</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Paket Starter -->
-                <div class="border-2 border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2">Starter</h3>
-                    <p class="line-through text-red-500">Rp5.000.000</p>
-                    <p class="text-4xl mb-2 font-bold text-blue-700">Rp1.700.000</p>
-                    <p class="text-gray-500 mb-4"> <span class="font-semibold text-green-600">Free</span> Hosting 1 Tahun </p>
-                    <a href="#" class="block bg-blue-700 text-white py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
-                        Beli Sekarang
-                    </a>
-                    <div class="mt-4 flex justify-center">
-                        <span class="border border-orange-500 text-orange-500 text-sm px-3 py-1 rounded-full">5 Hari Pengerjaan</span>
-                    </div>
-                    <ul class="mt-6 space-y-2 text-left text-sm">
-                        <li>✅ Desain siap pakai, cepat jadi</li>
-                        <li>✅ Form kontak <span class="font-semibold text-green-600">sederhana</span></li>
-                        <li>✅ Link ke media sosial</li>
-                        <li>✅ 1 kali Revisi</li>
-                    </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Paket Free -->
+            <div class="border-2 border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Free Plan</h3>
+                <p class="text-4xl mb-2 font-bold text-blue-700">Rp0</p>
+                <p class="text-gray-500 mb-4"> <span class="font-semibold text-green-600">Tanpa biaya</span> untuk mencoba fitur dasar </p>
+                <a href="#" class="block bg-blue-700 text-white py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
+                    Daftar Sekarang
+                </a>
+                <div class="mt-4 flex justify-center">
+                    <span class="border border-orange-500 text-orange-500 text-sm px-3 py-1 rounded-full">Aktif 30 Hari</span>
                 </div>
+                <ul class="mt-6 space-y-2 text-left text-sm">
+                    <li>✅ Akses Dashboard Admin & Siswa</li>
+                    <li>✅ Ujian Pilihan Ganda (max 50 soal)</li>
+                    <li>✅ Laporan Nilai Otomatis</li>
+                    <li>✅ Fitur Absensi Siswa Dasar</li>
+                    <li>❌ Tidak termasuk hosting khusus</li>
+                    <li>❌ Tidak bisa ubah tampilan & logo</li>
+                </ul>
+            </div>
 
-                <!-- Paket Medium -->
-                <div class="border-2 border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2">Medium</h3>
-                    <p class="line-through text-red-500">Rp8.700.000</p>
-                    <p class="text-4xl mb-2 font-bold text-blue-700">Rp5.700.000</p>
-                    <p class="text-gray-500 mb-4"> <span class="font-semibold text-green-600">Free</span> Hosting 1 Tahun </p>
-                    <a href="#" class="block bg-blue-700 text-white py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
-                        Beli Sekarang
-                    </a>
-                    <div class="mt-4 flex justify-center gap-2">
-                        <span class="border border-orange-500 text-orange-500 text-sm px-3 py-1 rounded-full">7 Hari Pengerjaan</span>
-                    </div>
-                    <ul class="mt-6 space-y-2 text-left text-sm">
-                        <li>✅ Desain diubah sesuai warna & gaya usaha</li>
-                        <li>✅ 5–15 halaman (Home, Produk, Blog, dll.)</li>
-                        <li>✅ Bisa update sendiri lewat panel admin</li>
-                        <li>✅ Form pendaftaran atau pemesanan</li>
-                        <li>✅ Terhubung media sosial, peta lokasi</li>
-                    </ul>
+            <!-- Paket Premium -->
+            <div class="border-2 border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition relative">
+                <span class="absolute top-4 right-4 bg-orange-500 text-white text-xs px-3 py-1 rounded-full shadow-md">Paling Populer</span>
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Premium Plan</h3>
+                <p class="line-through text-red-500">Rp2.500.000</p>
+                <p class="text-4xl mb-2 font-bold text-blue-700">Rp1.250.000</p>
+                <p class="text-gray-500 mb-4"> <span class="font-semibold text-green-600">Free</span> Domain & Hosting 1 Tahun </p>
+                <a href="#" class="block bg-blue-700 text-white py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
+                    Langganan Sekarang
+                </a>
+                <div class="mt-4 flex justify-center gap-2">
+                    <span class="border border-orange-500 text-orange-500 text-sm px-3 py-1 rounded-full">Akses 1 Tahun</span>
                 </div>
-
-                <!-- Paket Custom -->
-                <div class="border-2 border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2">Custom</h3>
-                    <p class="line-through text-red-500">Rp21.000.000</p>
-                    <p class="text-4xl mb-2 font-bold text-blue-700">Rp18.700.000</p>
-                    <p class="text-gray-500 mb-4"> <span class="font-semibold text-green-600">Free</span> Hosting 1 Tahun </p>
-                    <a href="#" class="block bg-blue-700 text-white py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
-                        Beli Sekarang
-                    </a>
-                    <div class="mt-4 flex justify-center gap-2">
-                        <span class="border border-orange-500 text-orange-500 text-sm px-3 py-1 rounded-full">14 Hari Pengerjaan</span>
-                    </div>
-                    <ul class="mt-6 space-y-2 text-left text-sm">
-                        <li>✅ Desain khusus, unik, dan beda dari yang lain</li>
-                        <li>✅ Halaman sesuai kebutuhan, tanpa batas</li>
-                        <li>✅ Bisa update sendiri + fitur tambahan sesuai permintaan</li>
-                        <li>✅ Form custom + terhubung ke sistem bisnis</li>
-                        <li>✅ Sistem pembayaran, multi bahasa, login member</li>
-                    </ul>
-                </div>
+                <ul class="mt-6 space-y-2 text-left text-sm">
+                    <li>✅ Semua fitur Free Plan</li>
+                    <li>✅ Jumlah soal & peserta tidak terbatas</li>
+                    <li>✅ Desain custom sesuai identitas sekolah/instansi</li>
+                    <li>✅ Panel Admin & Analitik Lengkap</li>
+                    <li>✅ Akses Multi Guru & Multi Kelas</li>
+                    <li>✅ Sertifikat otomatis & hasil ujian terarsip</li>
+                    <li>✅ Support teknis penuh dari tim UjiPro</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const target = document.querySelector("#harga");
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const target = document.querySelector("#harga");
 
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        target.classList.add("active");
-                    } else {
-                        // hapus class kalau keluar viewport
-                        target.classList.remove("active");
-                    }
-                });
-            }, {
-                threshold: 0.2
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    target.classList.add("active");
+                } else {
+                    target.classList.remove("active");
+                }
             });
-
-            observer.observe(target);
+        }, {
+            threshold: 0.2
         });
 
-    </script>
+        observer.observe(target);
+    });
+</script>
+
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/628978475687" class="fixed bottom-8 right-6 bg-green-500 text-white px-4 py-3 rounded-full flex items-center gap-2 shadow-lg hover:bg-green-600 transition">
@@ -424,66 +408,92 @@
     </a>
 
     <!-- FAQ Section -->
-    <section class="bg-slate-900 text-white py-12" id="faqs">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-8 text-center">Pertanyaan yang Sering Diajukan</h2>
+<section class="bg-slate-900 text-white py-12" id="faqs">
+    <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center">Pertanyaan yang Sering Diajukan</h2>
 
-            <div class="space-y-4">
-                <!-- Item 1 -->
-                <div class="faq-item border-b border-slate-700 pb-4">
-                    <div class="faq-question flex justify-between items-center cursor-pointer">
-                        <span class="text-lg font-medium">Apakah harga sudah termasuk domain dan hosting?</span>
-                        <span class="text-2xl">+</span>
-                    </div>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-slate-300 mt-2">
-                        betul, harga sudah termasuk domain dan hosting 1 Tahun.
-                    </div>
+        <div class="space-y-4">
+            <!-- Item 1 -->
+            <div class="faq-item border-b border-slate-700 pb-4">
+                <div class="faq-question flex justify-between items-center cursor-pointer">
+                    <span class="text-lg font-medium">Apakah UjiPro-CBT bisa digunakan secara gratis?</span>
+                    <span class="text-2xl">+</span>
                 </div>
-
-                <!-- Item 2 -->
-                <div class="faq-item border-b border-slate-700 pb-4">
-                    <div class="faq-question flex justify-between items-center cursor-pointer">
-                        <span class="text-lg font-medium">Apakah ada layanan maintenance setelah website jadi?</span>
-                        <span class="text-2xl">+</span>
-                    </div>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-slate-300 mt-2">
-                        ada, silahkan hubungi team melalui whatsapp dan kami siap membantu anda.
-                    </div>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-slate-300 mt-2">
+                    Ya, tersedia <strong>Free Plan</strong> untuk mencoba fitur dasar UjiPro-CBT selama 30 hari tanpa biaya.
                 </div>
+            </div>
 
-                <!-- Item 3 -->
-                <div class="faq-item border-b border-slate-700 pb-4">
-                    <div class="faq-question flex justify-between items-center cursor-pointer">
-                        <span class="text-lg font-medium">Apakah website saya bisa muncul di Google?</span>
-                        <span class="text-2xl">+</span>
-                    </div>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-slate-300 mt-2">
-                        Ya, tentu saja bisa.
-                        Website yang kami buat sudah dioptimalkan agar bisa terindeks di Google.
-                    </div>
+            <!-- Item 2 -->
+            <div class="faq-item border-b border-slate-700 pb-4">
+                <div class="faq-question flex justify-between items-center cursor-pointer">
+                    <span class="text-lg font-medium">Apakah sistem ini bisa digunakan oleh beberapa guru sekaligus?</span>
+                    <span class="text-2xl">+</span>
+                </div>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-slate-300 mt-2">
+                    Bisa. Pada paket <strong>Premium</strong>, setiap guru dapat memiliki akun tersendiri untuk membuat soal, 
+                    melihat hasil ujian, dan memantau kehadiran siswa secara mandiri.
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="faq-item border-b border-slate-700 pb-4">
+                <div class="faq-question flex justify-between items-center cursor-pointer">
+                    <span class="text-lg font-medium">Apakah UjiPro-CBT memerlukan instalasi di komputer?</span>
+                    <span class="text-2xl">+</span>
+                </div>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-slate-300 mt-2">
+                    Tidak perlu. UjiPro-CBT berbasis web, jadi Anda cukup menggunakan browser dari laptop atau smartphone 
+                    tanpa instalasi tambahan.
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="faq-item border-b border-slate-700 pb-4">
+                <div class="faq-question flex justify-between items-center cursor-pointer">
+                    <span class="text-lg font-medium">Apakah data hasil ujian siswa aman?</span>
+                    <span class="text-2xl">+</span>
+                </div>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-slate-300 mt-2">
+                    Tentu saja. Semua data ujian tersimpan di server aman milik <strong>Trikarya Inovasi Digital</strong> 
+                    dengan sistem enkripsi untuk menjaga kerahasiaan dan integritas data.
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="faq-item border-b border-slate-700 pb-4">
+                <div class="faq-question flex justify-between items-center cursor-pointer">
+                    <span class="text-lg font-medium">Apakah UjiPro-CBT bisa diakses 24 jam?</span>
+                    <span class="text-2xl">+</span>
+                </div>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 text-slate-300 mt-2">
+                    Ya, sistem UjiPro-CBT dapat diakses kapan saja selama 24 jam penuh, 
+                    sehingga fleksibel digunakan untuk ujian daring di berbagai waktu.
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <script>
-        document.querySelectorAll(".faq-question").forEach(question => {
-            question.addEventListener("click", () => {
-                const item = question.parentElement;
-                const answer = item.querySelector(".faq-answer");
-                const icon = question.querySelector("span:last-child");
+<script>
+    // Interaksi FAQ (buka/tutup jawaban)
+    document.querySelectorAll(".faq-question").forEach(item => {
+        item.addEventListener("click", () => {
+            const parent = item.parentElement;
+            const answer = parent.querySelector(".faq-answer");
 
-                if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
-                    answer.style.maxHeight = "0";
-                    icon.textContent = "+";
-                } else {
-                    answer.style.maxHeight = answer.scrollHeight + "px";
-                    icon.textContent = "-";
-                }
-            });
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                item.querySelector("span:last-child").textContent = "+";
+            } else {
+                document.querySelectorAll(".faq-answer").forEach(a => a.style.maxHeight = null);
+                document.querySelectorAll(".faq-question span:last-child").forEach(s => s.textContent = "+");
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                item.querySelector("span:last-child").textContent = "−";
+            }
         });
-
-    </script>
+    });
+</script>
 
 
 
@@ -491,7 +501,7 @@
     <footer class="bg-[#0d1321] text-gray-400">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <!-- Copyright -->
-            <p class="text-sm">© 2025 Inovasi Digital Nusantara, Inc. All rights reserved.</p>
+            <p class="text-sm">© 2025 Trikarya Inovasi Digital, Inc. All rights reserved.</p>
 
             <!-- Social Media Icons -->
             <div class="flex space-x-5">
